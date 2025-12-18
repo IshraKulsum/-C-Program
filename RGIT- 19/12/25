@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h> //Required for the Sqrt() and pow() fuctions
+
+int main(){
+    float x1, y1, x2, y2; //Coordinates of two points 
+    float distance; //Variable to store the calculated distance
+    
+printf("Enter the X-Coordinates of the first point (x1): ");
+scanf("%f",&x1);
+printf("Enter the Y-Coordinates of the first point(y1): ");
+scanf("%f",&y1);
+
+printf("Enter te X-Coordinates of the Second point(x2):");
+scanf("%f",&x2);
+printf("Enter the Y-Coordinates of the Second point(y2):");
+scanf("%f",&y2);
+
+distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+printf("The Straight - line distance between(%.2f, %.2f) and (%.2f, %.2f) is: %.2f \n", x1, y1, x2, y2, distance);
+return 0;
+}
+
+/* OUTPUT: 
+Enter the X-Coordinates of the first point (x1): 1
+Enter the Y-Coordinates of the first point(y1): 2
+Enter te X-Coordinates of the Second point(x2):3
+Enter the Y-Coordinates of the Second point(y2):4
+The Straight - line distance between(1.00, 2.00) and (3.00, 4.00) is: 2.83 
+
+
+=== Code Execution Successful ===
+*/
