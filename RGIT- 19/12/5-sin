@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159265
+
+int main(){
+    double sum,term, nume, x;
+    int deg, i;
+    double fact;
+    
+printf("Enter the angle in degrees:");
+scanf("%d",&deg);
+//initialising all variables
+x = (deg*PI)/180.00;  //converting degree to radius
+sum = x;
+nume = x; //nume = numerator 
+i = 2;
+fact = 1.0;
+do
+{ //loop to calculate sin using Taylor series
+    fact = fact * i * (i + 1);
+    nume = -nume * x * x;
+    term = nume/fact;
+    sum += term;
+    i+=2;
+}while (fabs(term)>= 0.0001);
+//print the approx values of sin(deg)
+printf("Approx values of sin(%d) = %.5f \n",deg,sum);
+return 0;
+}
+/* O/P: 
+Enter the angle in degrees:90
+Approx values of sin(90) = 1.00000 
+
+
+=== Code Execution Successful ===
+*/
