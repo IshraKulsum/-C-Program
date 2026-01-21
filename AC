@@ -5,7 +5,7 @@
     printf("3rd!!\n"); */
     int integer;
     float flt = 10.5;
-    scanf("%d", integer);
+    scanf("%d", &integer);
     char character = 'a';
     printf("integer = %d\n", integer);
     printf("float = %f\n", flt);
@@ -13,3 +13,68 @@
     
     return 0;
  }
+
+/* OUTPUT: 
+3  - HERE THE CURSOR WA SJUST THERE BUT I DIDN'T KNOW WE WERE SUPPOSED TO INPUT!? SOOO WE ARE MAKING CHANGES INTO THE CODE! 
+integer = 3
+float = 10.500000
+character = a
+
+
+=== Code Execution Successful ===
+*/
+// Attempt -2 - DONEE!! 
+# include <stdio.h>
+ int main(){
+    /*printf("Hello World this is my first line \n");
+    printf("2nd hereee\n");
+    printf("3rd!!\n"); */
+    int integer;
+    float flt = 10.5;
+    printf("Enter you Interger here! : ");
+    scanf("%d", &integer);
+    char character = 'a';
+    printf("integer = %d\n", integer);
+    printf("float = %f\n", flt);
+    printf("character = %c\n", character);
+    
+    return 0;
+ }
+/*
+OUTPUT: 
+Enter you Interger here! : 9
+integer = 9
+float = 10.500000
+character = a
+
+
+=== Code Execution Successful === */
+
+// Sum of 2 no's
+
+# include <stdio.h>
+ int main(){
+    int a,b ;
+    printf("1st no a:");
+    scanf("%d",&a);
+    printf("2nd no b:");
+    scanf("%d",&b);
+     printf(" summing both we get: %d ", a+b);
+    return 0;
+ }
+
+/*
+OUTPUT:
+Enter you Interger here! : 9
+integer = 9
+float = 10.500000
+character = a
+
+
+=== Code Execution Successful ===
+*/
+
+
+
+
+
