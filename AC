@@ -1,0 +1,15 @@
+# include <stdio.h>
+ int main(){
+    /*printf("Hello World this is my first line \n");
+    printf("2nd hereee\n");
+    printf("3rd!!\n"); */
+    int integer;
+    float flt = 10.5;
+    scanf("%d", integer);
+    char character = 'a';
+    printf("integer = %d\n", integer);
+    printf("float = %f\n", flt);
+    printf("character = %c\n", character);
+    
+    return 0;
+ }
