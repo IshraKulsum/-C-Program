@@ -136,4 +136,35 @@ Thank you
 === Code Execution Successful ===
 */
 
+// AGE CHECKIG BOOT - usinf ternary operator(SINGLE LINE)
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("Please Enter your Age:");
+    scanf("%d", &a );
+    
+     a >= 18? printf("Your an Adult \n You can Vote\n") : printf("Your are underage\n Noteligible to vote\n");
+
+    printf("Thank you\n");
+
+    return 0;
+}
+/*
+OUTPUT:
+Please Enter your Age:34
+Your an Adult 
+ You can Vote
+Thank you
+
+
+=== Code Execution Successful ===
+Please Enter your Age:16
+Your are underage
+ Noteligible to vote
+Thank you
+
+
+=== Code Execution Successful ===
+*/
 
