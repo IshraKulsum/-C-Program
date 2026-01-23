@@ -99,6 +99,41 @@ Enter your no:2
 === Code Execution Successful ===
 */
 
+// AGE CHECKIG BOOT 
+#include <stdio.h>
 
+int main() {
+    int a;
+    printf("Please Enter your Age:");
+    scanf("%d", &a );
+    
+    if( a > 18){
+        printf("Your an Adult \n");
+        printf("Your Eligible to Vote\n");
+    }else{
+        printf("Your are underage\n");
+        printf("Your are ot eligible to Vote\n");
+    }
+    printf("Thank you\n");
+
+    return 0;
+}
+/*
+Please Enter your Age:09
+Your are underage
+Your are ot eligible to Vote
+Thank you
+
+
+=== Code Execution Successful ===
+
+Please Enter your Age:78
+Your an Adult 
+Your Eligible to Vote
+Thank you
+
+
+=== Code Execution Successful ===
+*/
 
 
