@@ -168,3 +168,94 @@ Thank you
 === Code Execution Successful ===
 */
 
+// For Loop to print 0 to 10
+#include <stdio.h>
+
+int main() {
+    for(int i = 0; i<= 10; i++){
+        printf("%d \n", i);
+    }
+
+    return 0;
+}
+/* 
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+
+
+=== Code Execution Successful ===
+*/
+// For Loop to character
+#include <stdio.h>
+
+int main() {
+    for(char i = 'a'; i<= 'z'; i++){
+        printf("%c \n", i);
+    }
+
+    return 0;
+}
+/* OUPTPUT:
+a 
+b 
+c 
+d 
+e 
+f 
+g 
+h 
+i 
+j 
+k 
+l 
+m 
+n 
+o 
+p 
+q 
+r 
+s 
+t 
+u 
+v 
+w 
+x 
+y 
+z 
+
+
+=== Code Execution Successful ===
+
+*/
+// For Loop to Float
+#include <stdio.h>
+
+int main() {
+    for (float i = 0.1; i<= 0.9; i += 0.1 ){
+        printf("%f \n", i);
+    }
+
+    return 0;
+}
+/*
+0.100000 
+0.200000 
+0.300000 
+0.400000 
+0.500000 
+0.600000 
+0.700000 
+0.800000 
+
+
+=== Code Execution Successful ===
+*/
