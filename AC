@@ -360,3 +360,138 @@ int main() {
 
 === Code Execution Successful ===
 */
+// Sum of n Natural No's
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the no that you want the sum & factorial of:");
+    scanf("%d", &n);
+    
+    int sum = 0;
+    int fact = 1;
+    for(int i = 1;i<=n;i++){
+        sum = sum + i;
+    }
+     for(int i = 1; i<=n; i++){
+            fact = fact * i;
+        }
+    printf("sum of the asked no is: %d \n", sum);
+    printf("fact of the asked no is: %d \n", fact);
+    
+
+    return 0;
+}
+/*
+enter the no that you want the sum & factorial of:5
+sum of the asked no is: 15 
+fact of the asked no is: 120 
+
+
+=== Code Execution Successful ===
+*/
+// Reverse order,Sum & factorial of n Natural No's
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the no that you want the sum & factorial of:");
+    scanf("%d", &n);
+    
+    int sum = 0;
+    int fact = 1;
+    for(int i = 1, j =n, k =1 ;i<=n, j >= 1, k <= n;i++,j--,k++){ // Can also be written bas "    for(int i = 1, j =n, k =1 ;i<=n && j >= 1&& k <= n;i++,j--,k++){
+"
+        sum = sum + i;
+        printf("%d \n",j);
+        fact = fact * k;
+    }
+
+    printf("sum of the asked no is: %d \n", sum);
+    printf("fact of the asked no is: %d \n", fact);
+    
+
+    return 0;
+}
+/*
+enter the no that you want the sum & factorial of:5
+5 
+4 
+3 
+2 
+1 
+sum of the asked no is: 15 
+fact of the asked no is: 120 
+
+
+=== Code Execution Successful ===
+*/
+
+//REVERSE ORDER IS ACTUALLY USEFULLLL SEE:
+// Reverse order,Sum & factorial of n Natural No's
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the no that you want the sum & factorial of:");
+    scanf("%d", &n);
+    
+    int sum = 0;
+    int fact = 1;
+    for(int j =n; j >= 1;j--){
+        sum = sum + j;
+        printf("%d \n",j);
+        fact = fact * j;
+    }
+
+    printf("sum of the asked no is: %d \n", sum);
+    printf("fact of the asked no is: %d \n", fact);
+    
+
+    return 0;
+}
+/*
+OUTPUT:
+enter the no that you want the sum & factorial of:5
+5 
+4 
+3 
+2 
+1 
+sum of the asked no is: 15 
+fact of the asked no is: 120 
+
+
+=== Code Execution Successful ===
+// Tables
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the no that you want the Table of:");
+    scanf("%d", &n);
+    
+    int tab = 1;
+    for(int j =1; j <= 10;j++){
+        printf(" %d x %d = %d\n",n,j,n * j);
+        tab = n * j;
+    }
+    return 0;
+}
+/*
+enter the no that you want the Table of:2
+ 2 x 1 = 2
+ 2 x 2 = 4
+ 2 x 3 = 6
+ 2 x 4 = 8
+ 2 x 5 = 10
+ 2 x 6 = 12
+ 2 x 7 = 14
+ 2 x 8 = 16
+ 2 x 9 = 18
+ 2 x 10 = 20
+
+
+=== Code Execution Successful ===
+*/
+*/
