@@ -123,6 +123,52 @@ int main()
     return 0;
 }
 
+ 4.CALCUALTE & DISPLAY THE ROOTS BASED ON THE GIVEN COFFICIENTS
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double a, b, c;
+    double root1, root2, root;
+    double realpart, imgpart, discrt;
+
+    // INPUT
+    printf("Enter the coefficients a, b and c: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    // DISCRIMINANT
+    discrt = (b * b) - (4 * a * c);
+
+    if (discrt > 0)
+    {
+        root1 = (-b + sqrt(discrt)) / (2 * a);
+        root2 = (-b - sqrt(discrt)) / (2 * a);
+
+        printf("Roots are Real and Distinct\n");
+        printf("Root 1 = %.2lf\n", root1);
+        printf("Root 2 = %.2lf\n", root2);
+    }
+    else if (discrt == 0)
+    {
+        root = -b / (2 * a);
+
+        printf("Roots are Real and Equal\n");
+        printf("Root = %.2lf\n", root);
+    }
+    else
+    {
+        realpart = -b / (2 * a);
+        imgpart  = sqrt(-discrt) / (2 * a);
+
+        printf("Roots are Complex\n");
+        printf("Root 1 = %.2lf + %.2lfi\n", realpart, imgpart);
+        printf("Root 2 = %.2lf - %.2lfi\n", realpart, imgpart);
+    }
+
+    return 0;
+}
+
 
 
 
