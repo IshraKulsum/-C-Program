@@ -1,0 +1,130 @@
+PART - A
+1. DISTANCE BTW 2 CO-ORDINATES
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+    float x1, x2, y1, y2, dist;
+
+    printf("Enter your first X & Y Coordinate (x1 y1): ");
+    scanf("%f %f", &x1, &y1);
+
+    printf("Enter your second X & Y Coordinate (x2 y2): ");
+    scanf("%f %f", &x2, &y2);
+
+    dist = sqrt(pow(x1 - x2, 2) + pow(y2 - y1, 2));
+
+    printf("The distance between the 2 points is %.2f", dist);
+
+    return 0;
+}
+
+2.TAKES STDS MARKS AS INPUT AND GRADES IT
+#include <stdio.h>
+
+int main() {
+//DECLARE
+     int marks;
+     // ASK MARKS
+    printf("Enter marks between 0 and 100:");
+    scanf("%d", &marks);
+    //CHECK
+    if( marks <0 || marks> 100){
+        printf("Invalid marks entered, please enter a value between 0 and 100:");
+    }else{
+        if(marks >= 90){
+            printf("Grade: A \n");
+        }else if(marks >= 75){
+            printf("Grade: B \n");
+        }else if(marks >= 60){
+            printf("Grade: C \n");
+        }else if(marks >= 50){
+            printf("Grade: D \n");
+        }else{
+            printf("Grade: F \n");
+        }
+    }
+
+    return 0;
+}
+
+3.TAKES A UNIQUE IDENTIFICATION NO
+#include <stdio.h>
+
+int main()
+{
+    int choice;
+    long long id;
+
+    /* Stored KYC records (constant values) */
+    const long long PAN = 1234567890LL;
+    const long long AADHAR = 987654321012LL;
+    const long long APAAR = 5555555555LL;
+    const long long DL = 2222222222LL;
+    const long long PASSPORT = 7777777777LL;
+
+    /* Menu */
+    printf("Select ID Type:\n");
+    printf("1. PAN Number\n");
+    printf("2. AADHAR Number\n");
+    printf("3. APAAR ID\n");
+    printf("4. Driving License\n");
+    printf("5. Passport\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    /* Input ID number */
+    printf("Enter the ID Number: ");
+    scanf("%lld", &id);
+
+    /* Verification */
+    switch (choice)
+    {
+        case 1:
+            if (id == PAN)
+                printf("PAN Verified");
+            else
+                printf("PAN Not Verified");
+            break;
+
+        case 2:
+            if (id == AADHAR)
+                printf("AADHAR Verified");
+            else
+                printf("AADHAR Not Verified");
+            break;
+
+        case 3:
+            if (id == APAAR)
+                printf("APAAR ID Verified");
+            else
+                printf("APAAR ID Not Verified");
+            break;
+
+        case 4:
+            if (id == DL)
+                printf("Driving License Verified");
+            else
+                printf("Driving License Not Verified");
+            break;
+
+        case 5:
+            if (id == PASSPORT)
+                printf("Passport Verified");
+            else
+                printf("Passport Not Verified");
+            break;
+
+        default:
+            printf("Invalid ID Type Selected");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
